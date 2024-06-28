@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       <!-- review carousel -->
+       <!-- review carousel -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    
+</head>
+
+
+<body id="indexbody" style="background-image: url({%static 'images/image1.jpg' %});">
+  <center><H2 id="editH2">BLOGS WORLD</H2></center>
+
+    <form method="POST" action="/update/{{Blogs1.id}}">
+        {% csrf_token %}
+        <div class="container" id="indexcontainer" style="background-image: url({%static 'images/image44.jpeg' %})";>
+            <h4 id="editH4">UPDATE YOUR BLOG</h4><br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <label for="title">Bloger Title  :</label>
+                        <input type="text" name="title" id="id_title" required maxlength="20" value="{{ Blogs1.title }}"/>
+                      </div> <br>           
+                </div><br>
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <label for="name">Bloger Name :</label>
+                        <input type="text" name="name" id="id_name" required maxlength="100" value="{{ Blogs1.name }}" />
+                      </div>  <br>          
+                </div><br>
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <label for="content">Blog Content :</label>
+                        <input type="text" name="content" id="id_content" required maxlength="354" value="{{ Blogs1.content }}" />
+                      </div>             
+                </div>
+            </div><br>
+            <button type="submit" id="mybtn1" class="btn btn-primary">Update</button><br><br>
+        </div>
+    </form>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</body>
+</html>
+       
+     
+
+
+
+
+
+
+
+
+
+
+
+

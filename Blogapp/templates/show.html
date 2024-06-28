@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogcontent</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/> 
+</head>
+
+
+<body style="background-image: url({%static 'images/image22.jpg' %});">
+  <div class="sticky1"><center><H2 id="editH2" class="sticky">BLOGS WORLD</H2></center></div>
+  <div class="sticky"><button><a href="/home" class="btn btn-primary"  id="add1">Add New Record</a></button></div>
+  <div class="container">
+  
+
+  
+</div>    
+       {% for x in Blogs %} 
+      <div class="blogshow">
+                  <center><h3>{{ x.title }}</h3>
+                  {% comment %} <center><img src={{x.image.url}} alt="image" width="80px" height="80px"></center> {% endcomment %}
+                  <center> <h4>-{{ x.name }}</h4></center>
+                  <center> <p>{{ x.content }}</p></center>
+                  <div class="buttonid">
+                  <center><button id="edit1"><a href="/edit/{{ x.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a></button>
+                    <button id="edit1"> <a href="/delete/{{ x.id }}">Delete</a></button></center><br> </div>
+                  </div><br>
+       {% endfor %} 
+                  
+                  
+        
+   
+  
+    
+    
+</body>
+</html>

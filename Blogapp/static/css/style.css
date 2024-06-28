@@ -1,0 +1,190 @@
+.myform1{
+    background-color: azure;
+    width: 50%;
+    margin-left: 300px;
+}
+.demo{
+    text-align: center;
+    margin-top: 150px;
+}
+#demo1{
+    margin: 0 0.5rem;
+    animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+#join{
+    background-color: rgb(7, 7, 7);
+    border: 1px solid rgb(18, 17, 17);
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+#join a{
+    text-decoration: none; 
+    color: aliceblue;
+}
+#join:hover{
+    background-color: rgb(255, 243, 243);
+}
+#join a:hover{
+    color: rgb(3, 3, 3);
+    transition: 0.1 ease-in-out;
+}
+.buttonid{
+    margin-left: 505px;
+    
+
+}
+#edit1{
+    background-color: black;
+}
+#edit1 a{
+    text-decoration: none;
+   
+    color: white;
+    
+}
+#edit1 a:hover{
+    color: rgb(10, 10, 10);
+}
+#edit1:hover{
+    background-color: rgb(251, 248, 248);
+}
+.container h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.blogshow{
+    color: rgb(5, 6, 6);
+    margin-left: 350px;
+    width: 50%;
+    border: 1px dashed black;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 4px black;
+}
+.blogshow p{
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:inherit;
+}
+#myrow{
+    margin-left: 200px;margin-top: 10px;
+
+}
+#myrow input{
+    background-color: aqua;
+}
+#myrow button{
+    margin-left: 50px;
+}
+div.sticky {
+    margin-top: 10px;
+    margin-left: 1050px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    font-size: 15px;
+     
+  }
+  .div.sticky1{
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  div.sticky a{
+    color: rgb(245, 238, 238);
+    text-decoration: none;
+  }
+  div.sticky button{
+    background-color: rgb(13, 13, 14);
+    border-radius: 10px;
+  }
+  div.sticky button:hover{
+    background-color: rgb(12, 197, 248);
+
+  }
+  div.sticky a:hover{
+    color: rgb(13, 13, 18);
+  }
+.index1{
+    margin-left: 500px;
+    color: aliceblue;
+}
+
+#mydiv{
+    margin-left: 300px;
+    width: 50%;
+    background-color:green;
+}
+.myid{
+    margin-left: -250px;
+    color: black;
+
+}
+.col-sm-2{
+    color: black;
+}
+#mybtn1{
+    margin-left: 55px;
+    padding: 8px;
+    background-color: rgb(27, 9, 146);
+}
+#mybtn1:hover{
+    background-color: rgb(36, 8, 217);
+    box-shadow: 0px 0px 2px 2px rgb(47, 7, 225);
+
+}
+#indexbody{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+#indexcontainer{
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255);
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    width: 50%;
+}
+#indexcontainer h3{
+    font-size: 35px;
+    text-decoration: underline;
+    color: rgb(12, 12, 12);
+    text-shadow: 2px 2px 2px 2px rgb(163, 56, 56);
+}
+#indexcontainer .input-group{
+    display: block;
+    margin: auto;
+    width: auto;
+}
+#indexcontainer .input-group label{
+    display: inline;
+    color: aliceblue;
+}
+#indexcontainer .input-group input{
+    display: inline;
+    color: rgb(1, 54, 99);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* editpage */
+#editH4{
+    color: rgb(251, 251, 255);
+    text-shadow: 2px 2px 2px black;
+}
+#editH2{
+    margin-top: -8px;
+    font-size: 50px;
+    color: rgb(251, 251, 255);
+    background-color: rgb(26, 2, 96);
+    border: 1px solid rgb(3, 3, 3);
+    text-shadow:  5px 5px 5px rgb(46, 5, 251);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
